@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for AI Baby Photoshoot — how we collect, use, and protect your data." />
+  <title>Privacy Policy — AI Baby Photoshoot</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --bg-soft: #eef4fb;
+      --surface: #ffffff;
+      --text: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --accent: #5b8def;
+      --accent-soft: #dce8fb;
+      --blush: #f3d9e4;
+      --blush-deep: #c97b9b;
+      --border: rgba(0, 0, 0, 0.06);
+      --shadow: 0 12px 40px rgba(29, 45, 80, 0.06);
+      --radius: 20px;
+      --max: 760px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, var(--blush) 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, var(--accent-soft) 0%, transparent 50%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      width: min(100% - 2rem, var(--max));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 1.25rem 0;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .brand:hover {
+      text-decoration: none;
+    }
+
+    .logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(145deg, #a8c5f7, #efc4d6);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+      flex-shrink: 0;
+    }
+
+    .hero {
+      padding: 2.75rem 0 1.75rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.85rem, 4.5vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: -0.035em;
+      line-height: 1.15;
+      margin-bottom: 0.65rem;
+    }
+
+    .hero p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+
+    .pill {
+      display: inline-block;
+      margin-bottom: 1rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid var(--border);
+      color: var(--blush-deep);
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .content {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.75rem 1.35rem 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .content h2 {
+      font-size: 1.2rem;
+      letter-spacing: -0.02em;
+      margin: 1.75rem 0 0.65rem;
+      scroll-margin-top: 1rem;
+    }
+
+    .content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .content h3 {
+      font-size: 1.02rem;
+      margin: 1.15rem 0 0.45rem;
+      color: var(--text);
+    }
+
+    .content p,
+    .content li {
+      color: var(--text-secondary);
+      font-size: 0.98rem;
+    }
+
+    .content p + p {
+      margin-top: 0.75rem;
+    }
+
+    .content ul {
+      margin: 0.65rem 0 0.85rem 1.2rem;
+    }
+
+    .content li {
+      margin-bottom: 0.4rem;
+    }
+
+    .highlight {
+      margin: 1rem 0;
+      padding: 1rem 1.1rem;
+      border-radius: 14px;
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+    }
+
+    .highlight p {
+      color: var(--text);
+    }
+
+    .toc {
+      margin: 0 0 1.5rem;
+      padding: 1rem 1.1rem;
+      border-radius: 14px;
+      background: #fafbfd;
+      border: 1px solid var(--border);
+    }
+
+    .toc strong {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    .toc ol {
+      margin-left: 1.15rem;
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+    }
+
+    .toc li {
+      margin-bottom: 0.3rem;
+    }
+
+    footer {
+      padding: 2rem 0 3rem;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    footer nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+    }
+
+    footer a {
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      color: var(--accent);
+    }
+
+    @media (min-width: 640px) {
+      .content {
+        padding: 2.25rem 2.5rem 2.5rem;
+      }
+
+      .hero {
+        padding: 4rem 0 2.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>AI Baby Photoshoot</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <span class="pill">Legal</span>
+      <h1>Privacy Policy</h1>
+      <p>Last updated: July 22, 2026</p>
+    </section>
+
+    <article class="wrap content">
+      <p>
+        This Privacy Policy describes how <strong>AI Baby Photoshoot</strong> (“we,” “us,” or “our”)
+        collects, uses, stores, and shares information when you use our mobile application and related
+        services (the “App”). We designed this policy to meet Apple App Store privacy expectations,
+        especially for apps that process photos with AI.
+      </p>
+      <p>
+        By using the App, you agree to the practices described here. If you do not agree, please do not
+        use the App.
+      </p>
+
+      <nav class="toc" aria-label="Table of contents">
+        <strong>Contents</strong>
+        <ol>
+          <li><a href="#data-collected">Information We Collect</a></li>
+          <li><a href="#how-we-use">How We Use Information</a></li>
+          <li><a href="#ai-processing">AI Data Processing</a></li>
+          <li><a href="#sharing">How We Share Information</a></li>
+          <li><a href="#retention">Data Retention</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#children">Children’s Privacy</a></li>
+          <li><a href="#rights">Your Rights &amp; Choices</a></li>
+          <li><a href="#international">International Transfers</a></li>
+          <li><a href="#changes">Changes to This Policy</a></li>
+          <li><a href="#contact">Contact Information</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="data-collected">1. Information We Collect</h2>
+      <p>Depending on how you use the App, we may collect:</p>
+
+      <h3>Account &amp; identity information</h3>
+      <ul>
+        <li>Name and email address</li>
+        <li>Profile photo / avatar URL (if provided by your sign-in provider)</li>
+        <li>Sign-in identifiers from Apple Sign In or Google Sign-In</li>
+        <li>Device identifiers used to maintain your session and guest experience</li>
+      </ul>
+
+      <h3>Baby profile information</h3>
+      <ul>
+        <li>Baby nickname or name you choose to save</li>
+        <li>Gender and date of birth (if you provide them)</li>
+        <li>Photos you upload for portrait generation</li>
+      </ul>
+
+      <h3>Generated content &amp; usage data</h3>
+      <ul>
+        <li>AI-generated portrait images and related generation history</li>
+        <li>Template / style selections and in-app activity needed to operate features</li>
+        <li>App diagnostics and technical logs (for example, error events) to keep the service reliable</li>
+      </ul>
+
+      <h3>Purchases &amp; subscriptions</h3>
+      <ul>
+        <li>Subscription and purchase status processed through Apple App Store / Google Play</li>
+        <li>We do not receive or store your full payment card details; those are handled by Apple or Google</li>
+      </ul>
+
+      <h2 id="how-we-use">2. How We Use Information</h2>
+      <p>We use the information we collect to:</p>
+      <ul>
+        <li>Provide, personalize, and improve the App’s features</li>
+        <li>Generate AI baby portraits from photos you upload</li>
+        <li>Manage accounts, credits, subscriptions, and purchases</li>
+        <li>Respond to support requests and communicate about the App</li>
+        <li>Protect security, prevent abuse, and comply with legal obligations</li>
+      </ul>
+
+      <h2 id="ai-processing">3. AI Data Processing</h2>
+      <div class="highlight">
+        <p>
+          Uploaded photos are used <strong>only</strong> to generate the portraits you request.
+          We process them securely and do <strong>not</strong> sell your photos or personal data.
+          We do <strong>not</strong> use your photos to train our own AI models without your explicit consent.
+        </p>
+      </div>
+      <p>
+        When you request a photoshoot, your uploaded image and related prompt/style information are
+        sent to trusted third-party AI processing providers solely to create your generated portrait.
+        Those providers process the content to fulfill your request and are not authorized by us to
+        use your photos to sell advertising or to train models for unrelated purposes.
+      </p>
+      <p>
+        Photos and generated images are stored securely in connection with your account so you can
+        view, manage, and re-use them in the App. They remain available until you delete them in the
+        App or until your account data is deleted (see Data Retention below). We do not apply a
+        hidden short-term auto-delete timer that removes photos without your action; you stay in
+        control of when photos are removed from your account.
+      </p>
+      <p>
+        You may delete individual photos, baby profiles, or generated results from within the App
+        where those controls are available. You may also contact us to request deletion of your
+        account and associated data.
+      </p>
+
+      <h2 id="sharing">4. How We Share Information</h2>
+      <p>We may share information only as needed to operate the App:</p>
+      <ul>
+        <li><strong>AI processing providers</strong> — to generate portraits from your uploads</li>
+        <li><strong>Cloud hosting &amp; storage providers</strong> — to store and deliver images and app data securely</li>
+        <li><strong>Authentication providers</strong> — Apple and/or Google for sign-in</li>
+        <li><strong>App stores &amp; billing platforms</strong> — Apple and Google for purchases and subscription status</li>
+        <li><strong>Legal / safety</strong> — when required by law or to protect users, rights, and security</li>
+      </ul>
+      <p>
+        We do <strong>not</strong> sell personal information, and we do not share photos for marketing
+        lists or third-party advertising networks.
+      </p>
+
+      <h2 id="retention">5. Data Retention</h2>
+      <ul>
+        <li><strong>Uploaded photos &amp; generated portraits:</strong> retained while associated with your account so you can access them in the App, until you delete them or request account deletion.</li>
+        <li><strong>Account information:</strong> retained while your account is active and as needed for support, billing records, and legal compliance.</li>
+        <li><strong>After deletion requests:</strong> we permanently remove account-linked data from our active systems, subject to limited backups or records we may need to keep for security, fraud prevention, dispute resolution, or legal obligations.</li>
+      </ul>
+
+      <h2 id="security">6. Security</h2>
+      <p>
+        We use industry-standard safeguards appropriate to the sensitivity of photo and account data,
+        including encrypted transport (HTTPS), access controls, and secure cloud storage. No method of
+        transmission or storage is 100% secure, but we work continuously to protect your information.
+      </p>
+
+      <h2 id="children">7. Children’s Privacy</h2>
+      <p>
+        The App is intended for use by parents or legal guardians. Photos of babies/children should
+        only be uploaded by an adult who has the right to do so. We do not knowingly collect personal
+        information directly from children under 13 for their own accounts. If you believe a child’s
+        information was submitted improperly, contact us and we will take appropriate steps to delete it.
+      </p>
+
+      <h2 id="rights">8. Your Rights &amp; Choices</h2>
+      <p>Depending on where you live, you may have rights to:</p>
+      <ul>
+        <li>Access the personal data we hold about you</li>
+        <li>Correct inaccurate information</li>
+        <li>Delete photos, generated images, or your account data</li>
+        <li>Withdraw consent where processing is based on consent</li>
+        <li>Object to or restrict certain processing</li>
+        <li>Request a copy of your data in a portable format</li>
+      </ul>
+      <p>
+        You can exercise many of these controls in the App (for example, deleting photos or profiles).
+        For account deletion or other privacy requests, email us at
+        <a href="mailto:mahesh@yudiz.com">mahesh@yudiz.com</a>. We will respond within a reasonable
+        timeframe and as required by applicable law.
+      </p>
+      <p>
+        If you use Sign in with Apple or Google, you can also manage linked permissions through those
+        providers’ account settings.
+      </p>
+
+      <h2 id="international">9. International Transfers</h2>
+      <p>
+        We may process and store information on servers located in countries other than where you live.
+        When we do, we take steps designed to protect your information in accordance with this Privacy
+        Policy and applicable law.
+      </p>
+
+      <h2 id="changes">10. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. When we do, we will revise the
+        “Last updated” date above. Continued use of the App after an update means you accept the
+        revised policy. For material changes, we may provide additional notice in the App.
+      </p>
+
+      <h2 id="contact">11. Contact Information</h2>
+      <p>
+        If you have questions about this Privacy Policy, our data practices, or wish to exercise your
+        privacy rights, contact us at:
+      </p>
+      <p>
+        <strong>AI Baby Photoshoot</strong><br />
+        Email: <a href="mailto:mahesh@yudiz.com">mahesh@yudiz.com</a>
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:mahesh@yudiz.com">Contact</a>
+      </nav>
+      <p>&copy; 2026 AI Baby Photoshoot. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

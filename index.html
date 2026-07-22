@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI Baby Photoshoot — create beautiful, professional baby portraits with AI. Support and about." />
+  <title>AI Baby Photoshoot — Support &amp; About</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --bg-soft: #eef4fb;
+      --surface: #ffffff;
+      --text: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --accent: #5b8def;
+      --accent-soft: #dce8fb;
+      --blush: #f3d9e4;
+      --blush-deep: #c97b9b;
+      --border: rgba(0, 0, 0, 0.06);
+      --shadow: 0 12px 40px rgba(29, 45, 80, 0.06);
+      --radius: 20px;
+      --max: 720px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, var(--blush) 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, var(--accent-soft) 0%, transparent 50%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      width: min(100% - 2rem, var(--max));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 1.25rem 0;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .brand:hover {
+      text-decoration: none;
+    }
+
+    .logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: linear-gradient(145deg, #a8c5f7, #efc4d6);
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+      flex-shrink: 0;
+    }
+
+    .hero {
+      padding: 3.5rem 0 2.5rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 700;
+      letter-spacing: -0.035em;
+      line-height: 1.15;
+      margin-bottom: 0.85rem;
+    }
+
+    .hero p {
+      color: var(--text-secondary);
+      font-size: 1.125rem;
+      max-width: 34rem;
+      margin: 0 auto;
+    }
+
+    .pill {
+      display: inline-block;
+      margin-bottom: 1.25rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid var(--border);
+      color: var(--blush-deep);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    section {
+      margin-bottom: 1.5rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.75rem 1.5rem;
+    }
+
+    .card h2 {
+      font-size: 1.25rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+    }
+
+    .card p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+
+    .card p + p {
+      margin-top: 0.85rem;
+    }
+
+    .support-email {
+      display: block;
+      margin-top: 1.25rem;
+      padding: 1rem 1.15rem;
+      border-radius: 14px;
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 1.05rem;
+      word-break: break-word;
+    }
+
+    .support-email:hover {
+      text-decoration: none;
+      background: #e6eef9;
+    }
+
+    .support-note {
+      margin-top: 0.85rem;
+      font-size: 0.925rem;
+    }
+
+    footer {
+      padding: 2.5rem 0 3rem;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    footer nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+    }
+
+    footer a {
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      color: var(--accent);
+    }
+
+    @media (min-width: 640px) {
+      .card {
+        padding: 2rem 2.25rem;
+      }
+
+      .hero {
+        padding: 5rem 0 3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>AI Baby Photoshoot</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <span class="pill">Support &amp; About</span>
+      <h1>AI Baby Photoshoot</h1>
+      <p>Professional baby portraits, crafted with care — and a little help from AI.</p>
+    </section>
+
+    <section class="wrap" id="about">
+      <div class="card">
+        <h2>About Us</h2>
+        <p>
+          AI Baby Photoshoot helps parents create beautiful, studio-quality baby portraits
+          using advanced AI. Upload a photo of your little one, choose a style, and receive
+          polished portraits you can treasure and share — without booking a traditional photoshoot.
+        </p>
+        <p>
+          We built this app for parents who want memorable keepsakes that feel warm, safe,
+          and effortless.
+        </p>
+      </div>
+    </section>
+
+    <section class="wrap" id="support">
+      <div class="card">
+        <h2>Support</h2>
+        <p>
+          Need help with the app, your account, subscriptions, or privacy requests?
+          Our team is happy to assist.
+        </p>
+        <a class="support-email" href="mailto:support@skushot.com">support@skushot.com</a>
+        <p class="support-note">
+          We typically respond within 1–2 business days. Please include your Apple ID email
+          or account details related to the issue so we can help faster.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:mahesh@yudiz.com">Contact</a>
+      </nav>
+      <p>&copy; 2026 AI Baby Photoshoot. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
